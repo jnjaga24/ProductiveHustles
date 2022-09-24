@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Websites for Freelancers">
+    <meta name="keywords" content="websites for freelancers, portfolio designs">
+    <link rel="stylesheet" href="style.css">
+    <title>LOREM IPSUM</title>
+</head>
+<body>
+    <div class="container" id="app" v-cloak>
+        <div class="navbar">
+            <h3>{{appTitle}}</h3>
+        </div>
+        <div>
+            <div class="tariff-block">
+                <div class="block" v-for="item in tariffRates">
+                    <p class="block-title">{{item.variant}}</p>
+                    <p class="block-calculation">{{item.amount}}*{{currentMonthFinalDate}} ({{item.quantity}})</p>
+                    <p class="block-amount">Rs {{item.amount*currentMonthFinalDate}} </p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="form-section">
+            <form >
+                <div class="form-each">
+                    <label for="Blue">Blue</label>
+                    <input type="number" id="Blue" class="quantity" v-model="blue">
+                </div>
+                <div class="form-each">
+                    <label for="Green">Green</label>
+                    <input type="number" id="Green" class="quantity" v-model="green">
+                </div>
+                <div class="form-each">
+                    <label for="Red">Orange</label>
+                    <input type="number" id="Red" class="quantity" v-model="red">
+                </div>
+                <div class="form-each">
+                    <label for="Pink">Pink</label>
+                    <input type="number" id="Pink" class="quantity" v-model="pink">
+                </div>
+                <div class="form-each">
+                    <label for="oneBlue">1 Blue</label>
+                    <input type="number" id="oneBlue" class="quantity" v-model="oneblue">
+                </div>
+                <div class="clear"></div>
+                <br>
+                <button type="submit" class="calculate"  @click="submitHandler($event)">Submit</button>
+            </form>
+        </div>
+
+        <div class="output" v-if="output.length === 0">
+            <p class="output-message" >No Results to Show...!</p>
+        </div>
+        <div class="output" v-if="output.length >= 1">
+            <h2 style="text-align: center;text-decoration:underline;line-height: 43px;">Calculation</h2>
+            <p class="output-message" v-for="item in output">{{item.text}} = {{item.price}}</p>
+            <p class="output-message finalAmount" >Final Amount = Rs.{{finalAmount}}</p>
+        </div>
+        <br>
+        <br>
+    </div>
+   
+</body>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="app.js"></script>
+</html>
