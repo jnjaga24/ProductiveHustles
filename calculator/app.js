@@ -33,7 +33,7 @@ createApp({
         {
             variant: "Diet Milk (Pink)",
             quantity: "Half Litre",
-            amount: 37,
+            amount: 16.5,
         }
       ],
       currentMonthFinalDate: lastDay.getDate(),
