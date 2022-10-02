@@ -12,7 +12,7 @@
     "paymentType": "Advance",
     "billingPatternId": 1,
     "billingPeriod": "MonthMid",
-    "className":"play"
+    "className": "play"
   },
   {
     "customerName": "Shanthi",
@@ -27,7 +27,7 @@
     "paymentType": "Advance",
     "billingPatternId": 1,
     "billingPeriod": "MonthMid",
-    "className":"study"
+    "className": "study"
   },
   {
     "customerName": "MuthuSubramanian",
@@ -42,7 +42,7 @@
     "paymentType": "Advance",
     "billingPatternId": 1,
     "billingPeriod": "MonthMid",
-    "className":"exercise"
+    "className": "exercise"
   },
   {
     "customerName": "Ganesh",
@@ -57,7 +57,7 @@
     "paymentType": "Advance",
     "billingPatternId": 1,
     "billingPeriod": "MonthMid",
-    "className":"selfcare"
+    "className": "selfcare"
   },
   {
     "customerName": "Paati",
@@ -72,7 +72,7 @@
     "paymentType": "Advance",
     "billingPatternId": 1,
     "billingPeriod": "MonthMid",
-    "className":"social"
+    "className": "social"
   },
   {
     "customerName": "Azeez Rizwan",
@@ -85,9 +85,9 @@
       }
     ],
     "paymentType": "Advance",
-    "billingPatternId": 1,
+    "billingPatternId": 2,
     "billingPeriod": "MonthMid",
-    "className":"play"
+    "className": "play"
   },
   {
     "customerName": "Mrinal D",
@@ -102,7 +102,7 @@
     "paymentType": "PostService",
     "billingPatternId": 2,
     "billingPeriod": "MonthMid",
-    "className":"study"
+    "className": "study"
   },
   {
     "customerName": "Sivakami Murugappan",
@@ -117,7 +117,7 @@
     "paymentType": "PostService",
     "billingPatternId": 2,
     "billingPeriod": "MonthBegin",
-    "className":"social"
+    "className": "social"
   },
   {
     "customerName": "Cross Gate Opp",
@@ -132,7 +132,7 @@
     "paymentType": "Advance",
     "billingPatternId": 2,
     "billingPeriod": "MonthMid",
-    "className":"social"
+    "className": "social"
   },
   {
     "customerName": "Deepanjali",
@@ -147,7 +147,7 @@
     "paymentType": "Advance",
     "billingPatternId": 2,
     "billingPeriod": "MonthMid",
-    "className":"selfcare"
+    "className": "selfcare"
   },
   {
     "customerName": "Sunskiriti",
@@ -162,6 +162,6 @@
     "paymentType": "PostService",
     "billingPatternId": 2,
     "billingPeriod": "MonthBegin",
-    "className":"social"
+    "className": "social"
   }
 ]
