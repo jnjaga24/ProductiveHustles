@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Billing Dashboard</title>
+</head>
+<body>
+    
+    <div class="container" id="app" v-cloak>
+        <!-- Menu card -->
+        <div class="menu-card">
+
+            <div class="card-report">
+                <img src="./images/image-jagadeesh.png" alt="image jeremy">
+                <div class="report">
+                    <p>Report for</p>
+                    <div class="name">{{ name }}</div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <!-- <div class="menu-link">Daily</div>
+                <div class="menu-link ">Weekly</div> -->
+                <div class="menu-link menu-active">Total Amount <span class="totalAmount">Rs.{{totalAmount}}</span></div>
+            </div>
+        </div>
+
+        <!-- Regular card -->
+        <template v-for="item in output">   
+            <div class="regular-card work" :class="`regular-card ${item.className}`"  @click="say(item)">
+                <div class="property-card">
+                    <div class="row">
+                        <div class="title">{{item.customerName}}</div>
+                        <div class="points">
+                            <div class="point"></div>
+                            <div class="point"></div>
+                            <div class="point"></div>
+                        </div>
+                    </div>
+    
+                    <div class="row-2">
+                        <div class="hours">{{item.billAmount}}</div>
+                        <div class="description">{{item.billPeriod}}</div>
+                        <div class="description">{{item.totalDays}} Days</div>
+                        <div class="description">{{item.productDetails}}</div>
+                    </div>
+                </div>
+            </div>
+          </template> 
+       
+
+        <!-- Regular card -->
+        <!-- <div class="regular-card play">
+            <div class="property-card">
+                <div class="row">
+                    <div class="title">Shanthi</div>
+                    <div class="points">
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                    </div>
+                </div>
+
+                <div class="row-2">
+                    <div class="hours">10 Rs</div>
+                    <div class="description">Period - 8 Rs</div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Regular card -->
+        <!-- <div class="regular-card study">
+            <div class="property-card">
+                <div class="row">
+                    <div class="title">MuthuSubramanian</div>
+                    <div class="points">
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                    </div>
+                </div>
+
+                <div class="row-2">
+                    <div class="hours">4 Rs</div>
+                    <div class="description">Period - 7 Rs</div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Regular card -->
+        <!-- <div class="regular-card exercise">
+            <div class="property-card">
+                <div class="row">
+                    <div class="title">Ganesh</div>
+                    <div class="points">
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                    </div>
+                </div>
+
+                <div class="row-2">
+                    <div class="hours">4 Rs</div>
+                    <div class="description">Period - 5 Rs</div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Regular card -->
+        <!-- <div class="regular-card social">
+            <div class="property-card">
+                <div class="row">
+                    <div class="title">Azeez Rizwaan</div>
+                    <div class="points">
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                    </div>
+                </div>
+
+                <div class="row-2">
+                    <div class="hours">5 Rs</div>
+                    <div class="description">Period - 10 Rs</div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Regular card -->
+        <!-- <div class="regular-card selfcare">
+            <div class="property-card">
+                <div class="row">
+                    <div class="title">Sivagami Murugappan</div>
+                    <div class="points">
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                    </div>
+                </div>
+
+                <div class="row-2">
+                    <div class="hours">2 Rs</div>
+                    <div class="description">Period - 2 Rs</div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Regular card -->
+        <!-- <div class="regular-card play">
+            <div class="property-card">
+                <div class="row">
+                    <div class="title">Mirinal D</div>
+                    <div class="points">
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                    </div>
+                </div>
+
+                <div class="row-2">
+                    <div class="hours">2 Rs</div>
+                    <div class="description">Period - 2 Rs</div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Regular card -->
+        <!-- <div class="regular-card social">
+            <div class="property-card">
+                <div class="row">
+                    <div class="title">Deepanjali</div>
+                    <div class="points">
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                    </div>
+                </div>
+
+                <div class="row-2">
+                    <div class="hours">2 Rs</div>
+                    <div class="description">Period - 2 Rs</div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Regular card -->
+        <!-- <div class="regular-card exercise">
+            <div class="property-card">
+                <div class="row">
+                    <div class="title">Cross Gate Opp</div>
+                    <div class="points">
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                    </div>
+                </div>
+
+                <div class="row-2">
+                    <div class="hours">2 Rs</div>
+                    <div class="description">Period - 2 Rs</div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Regular card -->
+        <!-- <div class="regular-card work">
+            <div class="property-card">
+                <div class="row">
+                    <div class="title">ManiPriya Opp</div>
+                    <div class="points">
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                    </div>
+                </div>
+
+                <div class="row-2">
+                    <div class="hours">2 Rs</div>
+                    <div class="description">Period - 2 Rs</div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Regular card -->
+        <!-- <div class="regular-card selfcare">
+            <div class="property-card">
+                <div class="row">
+                    <div class="title">Sunskriti</div>
+                    <div class="points">
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                    </div>
+                </div>
+
+                <div class="row-2">
+                    <div class="hours">2 Rs</div>
+                    <div class="description">Period - 2 Rs</div>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+</body>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="./js/appContructor.js"></script>
+</html>

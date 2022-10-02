@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "variant": "Tonned Milk (Blue)",
+        "quantity": 0.5,
+        "cardAmount": 18.5,
+        "definedTariff": 22
+    },
+    {
+        "id": 2,
+        "variant": "Standardised (Green)",
+        "quantity": 0.5,
+        "cardAmount": 21,
+        "definedTariff": 24
+    },
+    {
+        "id": 3,
+        "variant": "Full Cream (Orange)",
+        "quantity": 0.5,
+        "cardAmount": 23,
+        "definedTariff": 25
+    },
+    {
+        "id": 4,
+        "variant": "Tonned Full Milk (Blue)",
+        "quantity": 1,
+        "cardAmount": 37,
+        "definedTariff": 44
+    },
+    {
+        "id": 5,
+        "variant": "Diet Milk (Pink)",
+        "quantity": 0.5,
+        "cardAmount": 16.5,
+        "definedTariff": 31
+    }
+]

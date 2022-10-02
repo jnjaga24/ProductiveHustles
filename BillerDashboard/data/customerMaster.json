@@ -1,0 +1,167 @@
+[
+  {
+    "customerName": "Uthra",
+    "address": "London House Street",
+    "mobileNo": "",
+    "product": [
+      {
+        "productId": 1,
+        "Quantity": 2
+      }
+    ],
+    "paymentType": "Advance",
+    "billingPatternId": 1,
+    "billingPeriod": "MonthMid",
+    "className":"play"
+  },
+  {
+    "customerName": "Shanthi",
+    "address": "London House Street",
+    "mobileNo": "",
+    "product": [
+      {
+        "productId": 1,
+        "Quantity": 2
+      }
+    ],
+    "paymentType": "Advance",
+    "billingPatternId": 1,
+    "billingPeriod": "MonthMid",
+    "className":"study"
+  },
+  {
+    "customerName": "MuthuSubramanian",
+    "address": "London House Street",
+    "mobileNo": "",
+    "product": [
+      {
+        "productId": 1,
+        "Quantity": 2
+      }
+    ],
+    "paymentType": "Advance",
+    "billingPatternId": 1,
+    "billingPeriod": "MonthMid",
+    "className":"exercise"
+  },
+  {
+    "customerName": "Ganesh",
+    "address": "Pump Street",
+    "mobileNo": "",
+    "product": [
+      {
+        "productId": 1,
+        "Quantity": 1
+      }
+    ],
+    "paymentType": "Advance",
+    "billingPatternId": 1,
+    "billingPeriod": "MonthMid",
+    "className":"selfcare"
+  },
+  {
+    "customerName": "Paati",
+    "address": "Manipriya Opp",
+    "mobileNo": "",
+    "product": [
+      {
+        "productId": 2,
+        "Quantity": 1
+      }
+    ],
+    "paymentType": "Advance",
+    "billingPatternId": 1,
+    "billingPeriod": "MonthMid",
+    "className":"social"
+  },
+  {
+    "customerName": "Azeez Rizwan",
+    "address": "Sarvamangalam street",
+    "mobileNo": "",
+    "product": [
+      {
+        "productId": 2,
+        "Quantity": 3
+      }
+    ],
+    "paymentType": "Advance",
+    "billingPatternId": 1,
+    "billingPeriod": "MonthMid",
+    "className":"play"
+  },
+  {
+    "customerName": "Mrinal D",
+    "address": "Kudil Flats",
+    "mobileNo": "9962581434",
+    "product": [
+      {
+        "productId": 2,
+        "Quantity": 2
+      }
+    ],
+    "paymentType": "PostService",
+    "billingPatternId": 2,
+    "billingPeriod": "MonthMid",
+    "className":"study"
+  },
+  {
+    "customerName": "Sivakami Murugappan",
+    "address": "MMTC Colony",
+    "mobileNo": "",
+    "product": [
+      {
+        "productId": 2,
+        "Quantity": 2
+      }
+    ],
+    "paymentType": "PostService",
+    "billingPatternId": 2,
+    "billingPeriod": "MonthBegin",
+    "className":"social"
+  },
+  {
+    "customerName": "Cross Gate Opp",
+    "address": "",
+    "mobileNo": "",
+    "product": [
+      {
+        "productId": 1,
+        "Quantity": 2
+      }
+    ],
+    "paymentType": "Advance",
+    "billingPatternId": 2,
+    "billingPeriod": "MonthMid",
+    "className":"social"
+  },
+  {
+    "customerName": "Deepanjali",
+    "address": "MMTC Colony",
+    "mobileNo": "",
+    "product": [
+      {
+        "productId": 2,
+        "Quantity": 2
+      }
+    ],
+    "paymentType": "Advance",
+    "billingPatternId": 2,
+    "billingPeriod": "MonthMid",
+    "className":"selfcare"
+  },
+  {
+    "customerName": "Sunskiriti",
+    "address": "",
+    "mobileNo": "",
+    "product": [
+      {
+        "productId": 3,
+        "Quantity": 5
+      }
+    ],
+    "paymentType": "PostService",
+    "billingPatternId": 2,
+    "billingPeriod": "MonthBegin",
+    "className":"social"
+  }
+]

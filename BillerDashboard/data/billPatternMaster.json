@@ -1,0 +1,12 @@
+[
+    {
+      "id":1,
+      "billPatternName":"CARD-TARIFF",
+      "billPatternDescription" : "MILK PACKET CARD RATE + DELIVERYCHARGE + CARD BUYINNG CHARGE"
+    },
+    {
+        "id":2,
+        "billPatternName":"PRODUCT-VALUE",
+        "billPatternDescription" : "MILK PACKET DEFINED AMOUNT * NO OF DAYS IN A MONTH"
+    }
+]
