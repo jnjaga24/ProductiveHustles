@@ -20,7 +20,17 @@ createApp({
   },
   methods: {
     say(message) {
-      alert(message)
+      var customerMessage = `Dear Customer,
+      Request you to kindly settle the Milk amount of Rs ${message.billAmount} on or before 10th of this month.
+      Billing Period ${message.billPeriod},
+      No of Days ${message.totalDays}
+      Packets ${message.productDetails}.
+      
+      Payment can be done via gpay/phonepay/paytm
+                Jagadeesh Manoharan - 8015814398
+      `;
+      navigator.clipboard.writeText(customerMessage);
+      // alert(customerMessage);
     }
   },
   async beforeMount() {
@@ -64,15 +74,15 @@ createApp({
         });
         if(tempProduct.length >= 1){
         if(tempProduct[0].variant == 'Tonned Milk (Blue)'){
-            productDetails += `${customerObj.Quantity}B `;
+            productDetails += `${customerObj.Quantity} Blue `;
         }else if(tempProduct[0].variant == 'Standardised (Green)'){
-            productDetails += `${customerObj.Quantity}G `;
+            productDetails += `${customerObj.Quantity} Green `;
         }else if(tempProduct[0].variant == 'Full Cream (Orange)'){
-            productDetails += `${customerObj.Quantity}R `;
+            productDetails += `${customerObj.Quantity} Orange `;
         }else if(tempProduct[0].variant == 'Tonned Full Milk (Blue)'){
-            productDetails += `${customerObj.Quantity}FB `;
+            productDetails += `${customerObj.Quantity} FullBlue `;
         }else if(tempProduct[0].variant == 'Diet Milk (Pink)'){
-            productDetails += `${customerObj.Quantity}P `;
+            productDetails += `${customerObj.Quantity} Pink `;
         }
         }
         })
@@ -81,15 +91,15 @@ createApp({
       /* Billing Period*/
       if(element.billingPeriod == 'MonthMid'){
         if(element.paymentType == 'PostService'){
-            tempData["billPeriod"] = `${lastMonthlastDay.toLocaleString('en-US', {month: 'short'})} 16 - ${lastDay.toLocaleString('en-US', {month: 'short'})} 15`
+            tempData["billPeriod"] = `${lastMonthlastDay.toLocaleString('en-US', {month: 'short'})} 16-${lastDay.toLocaleString('en-US', {month: 'short'})} 15`
         }else{
-            tempData["billPeriod"] = `${lastDay.toLocaleString('en-US', {month: 'short'})} 16 - ${nextMonthlastDay.toLocaleString('en-US', {month: 'short'})} 15`
+            tempData["billPeriod"] = `${lastDay.toLocaleString('en-US', {month: 'short'})} 16-${nextMonthlastDay.toLocaleString('en-US', {month: 'short'})} 15`
         }
       }else{
         if(element.paymentType == 'PostService'){
-            tempData["billPeriod"] = `${lastMonthlastDay.toLocaleString('en-US', {month: 'short'})} 01 - ${lastMonthlastDay.toLocaleString('en-US', {month: 'short'})} ${this.previousMonthFinalDate}`
+            tempData["billPeriod"] = `${lastMonthlastDay.toLocaleString('en-US', {month: 'short'})} 01-${lastMonthlastDay.toLocaleString('en-US', {month: 'short'})} ${this.previousMonthFinalDate}`
         }else{
-            tempData["billPeriod"] = `${lastDay.toLocaleString('en-US', {month: 'short'})} 01 - ${lastDay.toLocaleString('en-US', {month: 'short'})} ${this.currentMonthFinalDate}`
+            tempData["billPeriod"] = `${lastDay.toLocaleString('en-US', {month: 'short'})} 01-${lastDay.toLocaleString('en-US', {month: 'short'})} ${this.currentMonthFinalDate}`
         }
       }
       /* Billing Amount*/
